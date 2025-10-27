@@ -114,4 +114,4 @@ Acreditamos em um café que faz bem para todos. Trabalhamos diretamente com prod
 ---
 
 **Grãos & Aromas Cafeteria**  
-*Onde cada xícara é uma experiência*
+Onde cada xícara é uma experiência
