@@ -1,16 +1,22 @@
+<div align="center">
+
+![Cafeteria acolhedora](https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZmZlZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500)
+
+</div>
+
 # Grãos & Aromas Cafeteria
 
 ## Bem-vindo ao seu refúgio de café artesanal
 
 No Grãos & Aromas, acreditamos que cada xícara de café conta uma história. Desde a seleção cuidadosa dos grãos até o ritual de preparo, transformamos momentos simples em experiências memoráveis.
 
----
-
-![Café expresso artesanal](https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500)
-
 ## Nossa Filosofia
 
 Somos apaixonados por café de verdade. Trabalhamos apenas com grãos selecionados de pequenos produtores, torrados artesanalmente para preservar as características únicas de cada origem. Aqui, você não encontra café comum - você descobre sabores autênticos e complexos que transformam sua pausa em um momento especial.
+
+---
+
+![Grãos selecionados](https://images.unsplash.com/photo-1525088553748-01d6e210e00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZmZlZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500)
 
 ### O que nos torna únicos
 
@@ -22,10 +28,6 @@ Dominamos diversos métodos de preparo: espresso, pour over, french press, aerop
 
 **Ambiente Acolhedor**  
 Criamos um espaço onde você pode desacelerar, trabalhar, ler ou simplesmente apreciar um bom café. Wi-fi de qualidade, tomadas em todas as mesas e a trilha sonora perfeita.
-
----
-
-![Ambiente acolhedor da cafeteria](https://images.unsplash.com/photo-1495862433577-132cf20d7902?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500)
 
 ## Nosso Cardápio
 
