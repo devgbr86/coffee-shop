@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+     <meta charset="UTF-8">
+     <link rel="icon" href="./img/favcoffee.svg" type="image/svg+xml">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>@devcaffe</title>
+     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          html {
+               scroll-behavior: smooth;
+               margin-top: 10px;
+          }
+
+          body {
+               font-family: Georgia, 'Times New Roman', Times, serif;
+               background-color: whitesmoke;
+               color: black;
+               line-height: 1.6;
+               margin-top: 90px;
+               font-size: 16px;
+          }
+
+          .navbar {
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               background-color: black;
+               display: flex;
+               align-items: center;
+               justify-content: flex-start;
+               gap: 30px;
+               padding: 20px 40px;
+               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+               z-index: 1000;
+          }
+
+          .navbar img {
+               border-radius: 50%;
+               width: 35px;
+               height: 35px;
+               object-fit: cover;
+               border: 2px solid orange;
+               box-shadow: 0 2px 8px rgba(255, 165, 0, 0.3);
+          }
+
+          .navbar .md-link {
+               color: orange;
+               text-decoration: none;
+               font-weight: 500;
+               margin: 0 15px;
+               cursor: pointer;
+               font-size: 15px;
+          }
+
+          .content {
+               max-width: 800px;
+               margin: 0 auto 50px auto;
+               padding: 40px;
+               background-color: white;
+               border-radius: 8px;
+               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+               border: 1px solid #ddd;
+          }
+
+          .content h1 {
+               font-size: 2.3em;
+               margin-bottom: 20px;
+               padding-bottom: 15px;
+               border-bottom: 2px solid #e0e0e0;
+               scroll-margin-top: 100px;
+          }
+
+          .content h2 {
+               font-size: 1.8em;
+               margin-top: 35px;
+               margin-bottom: 15px;
+               scroll-margin-top: 100px;
+          }
+
+          .content h3 {
+               font-size: 1.5em;
+               margin-top: 25px;
+               margin-bottom: 12px;
+               scroll-margin-top: 100px;
+          }
+
+          .content p,
+          .content li {
+               margin-bottom: 15px;
+          }
+
+          .content code {
+               background-color: #f5f5f5;
+               padding: 3px 8px;
+               border-radius: 4px;
+               font-family: Georgia, 'Times New Roman', Times, serif;
+               font-size: 0.9em;
+               border: 1px solid #ddd;
+          }
+
+          .content pre {
+               background-color: #f5f5f5;
+               padding: 18px;
+               border-radius: 6px;
+               overflow-x: auto;
+               margin-bottom: 20px;
+               border: 1px solid #ddd;
+               border-left: 4px solid black;
+               box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+          }
+
+          .content pre code {
+               background-color: transparent;
+               padding: 0;
+               border: none;
+          }
+
+          .content blockquote {
+               border-left: 4px solid black;
+               padding-left: 20px;
+               margin: 20px 0;
+               color: #333;
+               font-style: italic;
+          }
+
+          .content img {
+               max-width: 100%;
+               height: auto;
+               border-radius: 6px;
+               margin: 20px 0;
+               box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+               border: 1px solid #ddd;
+          }
+
+          .content a {
+               color: orange;
+               text-decoration: none;
+          }
+
+          .tech-skills {
+               display: flex;
+               flex-wrap: wrap;
+               gap: 12px;
+               margin-top: 15px;
+          }
+
+          .tech-badge {
+               background-color: black;
+               color: orange;
+               border-radius: 5px;
+               padding: 8px 14px;
+               font-size: 0.95em;
+               font-weight: 500;
+               display: inline-block;
+               border: 1px solid #333;
+               box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          }
+
+          footer {
+               text-align: center;
+               color: black;
+               padding: 30px 20px;
+               font-size: 15px;
+               background-color: transparent;
+          }
+
+          footer a {
+               color: black;
+               font-weight: 500;
+               text-decoration: none;
+          }
+
+          @media (max-width: 768px) {
+               body {
+                    margin-top: 80px;
+                    font-size: 15px;
+               }
+
+               .navbar {
+                    padding: 16px 25px;
+                    gap: 20px;
+               }
+
+               .navbar img {
+                    width: 35px;
+                    height: 35px;
+               }
+
+               .navbar .md-link {
+                    font-size: 14px;
+                    margin: 0 10px;
+               }
+
+               .content {
+                    margin: 0 25px 50px 25px;
+                    padding: 30px 25px;
+               }
+
+               .content h1 {
+                    font-size: 1.9em;
+                    margin-bottom: 18px;
+               }
+
+               .content h2 {
+                    font-size: 1.6em;
+                    margin-top: 30px;
+               }
+
+               .content h3 {
+                    font-size: 1.4em;
+               }
+
+               .content p,
+               .content li {
+                    margin-bottom: 18px;
+               }
+
+               .tech-badge {
+                    font-size: 0.9em;
+                    padding: 7px 12px;
+               }
+
+               footer {
+                    font-size: 14px;
+                    padding: 35px 25px;
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <div id="top"></div>
+
+     <nav class="navbar" id="nav-links" aria-label="Navegação principal">
+          <img src="./img/coffee.png" alt="Logo Guilherme Ribeiro">
+     </nav>
+
+     <main class="content" id="content" role="main">
+          <h1>Carregando...</h1>
+     </main>
+
+     <footer>
+          <p>
+               <a href="https://github.com/devgbr86" target="_blank" rel="noopener noreferrer">
+                    github.com/devgbr86
+               </a>
+          </p>
+     </footer>
+
+     <script>
+          const contentFolder = 'pages/';
+          const files = ['Home.md', 'Sobre.md', 'Contato.md'];
+          const navContainer = document.getElementById('nav-links');
+          const contentContainer = document.getElementById('content');
+
+          files.forEach(file => {
+               const link = document.createElement('a');
+               link.textContent = file.replace('.md', '');
+               link.className = 'md-link';
+               link.href = '#';
+               link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    loadMarkdown(file);
+               });
+               navContainer.appendChild(link);
+          });
+
+          async function loadMarkdown(file = 'Home.md') {
+               try {
+                    const response = await fetch(`${contentFolder}${file}`);
+                    if (!response.ok) throw new Error('Erro ao carregar o arquivo Markdown.');
+
+                    const markdown = await response.text();
+                    contentContainer.innerHTML = marked.parse(markdown);
+               } catch (error) {
+                    console.error(error);
+                    contentContainer.innerHTML = '<p>Erro ao carregar o conteúdo.</p>';
+               }
+          }
+
+          document.addEventListener('DOMContentLoaded', () => loadMarkdown());
+     </script>
+</body>
+
+</html>
