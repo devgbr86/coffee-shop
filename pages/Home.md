@@ -6,114 +6,179 @@
 
 # Grãos & Aromas Cafeteria
 
-## Bem-vindo ao seu refúgio de café artesanal
+## Seu refúgio de café artesanal no coração de BH
 
-No Grãos & Aromas, acreditamos que cada xícara de café conta uma história. Desde a seleção cuidadosa dos grãos até o ritual de preparo, transformamos momentos simples em experiências memoráveis.
-
-## Nossa Filosofia
-
-Somos apaixonados por café de verdade. Trabalhamos apenas com grãos selecionados de pequenos produtores, torrados artesanalmente para preservar as características únicas de cada origem. Aqui, você não encontra café comum - você descobre sabores autênticos e complexos que transformam sua pausa em um momento especial.
+No Grãos & Aromas, cada xícara conta uma história. Da seleção criteriosa dos grãos ao ritual cuidadoso de preparo, transformamos pausas cotidianas em experiências sensoriais inesquecíveis.
 
 ---
 
+## Nossa Filosofia
+
+Somos movidos por paixão genuína pelo café. Trabalhamos exclusivamente com grãos especiais de pequenos produtores, torrados artesanalmente para preservar as características únicas de cada terroir. Aqui você não encontra café industrial — você descobre perfis aromáticos complexos, acidez equilibrada e doçuras naturais que elevam sua experiência a outro patamar.
+
+Acreditamos que o café é mais que uma bebida: é cultura, é conexão, é o pretexto perfeito para desacelerar em meio à correria urbana.
+
+---
+
+<div align="center">
+
 ![Grãos selecionados](https://images.unsplash.com/photo-1525088553748-01d6e210e00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZmZlZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500)
 
-### O que nos torna únicos
+</div>
 
-**Grãos Especiais**  
-Trabalhamos com cafés de origem única, microlotes e blends exclusivos desenvolvidos por nossos mestres torrefadores. Cada safra é escolhida criteriosamente para oferecer perfis de sabor distintos.
+## O que nos torna especiais
 
-**Métodos Artesanais**  
-Dominamos diversos métodos de preparo: espresso, pour over, french press, aeropress e cold brew. Nossos baristas são treinados para extrair o melhor de cada grão.
+**Grãos de Origem Única**  
+Trabalhamos com cafés especiais rastreáveis, microlotes exclusivos e blends autorais desenvolvidos pelos nossos mestres torrefadores. Cada safra passa por rigorosa curadoria sensorial, garantindo perfis de sabor que surpreendem e encantam.
 
-**Ambiente Acolhedor**  
-Criamos um espaço onde você pode desacelerar, trabalhar, ler ou simplesmente apreciar um bom café. Wi-fi de qualidade, tomadas em todas as mesas e a trilha sonora perfeita.
+**Domínio dos Métodos de Extração**  
+Nossos baristas são verdadeiros artesãos do café. Dominamos espresso, pour over, french press, aeropress, chemex e cold brew. Cada método é escolhido estrategicamente para realçar as melhores características de cada origem.
+
+**Ambiente Pensado para Você**  
+Criamos um espaço onde vida e trabalho se encontram naturalmente. Wi-Fi estável, tomadas em todas as mesas, iluminação aconchegante e uma curadoria musical que nunca atrapalha, sempre complementa. Seja para uma reunião rápida, horas de trabalho focado ou simplesmente contemplar a vida, você é bem-vindo.
+
+---
 
 ## Nosso Cardápio
 
 ### Cafés Clássicos
 
-**Espresso**  
-Intenso e encorpado, preparado com nosso blend exclusivo da casa. A base perfeita para começar o dia.
+**Espresso** — *R$ 6,00*  
+Base concentrada e intensa preparada com nosso blend exclusivo. Corpo denso, creme persistente e final prolongado. A essência pura do café.
 
-**Cappuccino**  
-Equilíbrio perfeito entre espresso marcante e espuma de leite aveludada. Uma experiência cremosa e reconfortante.
+**Cappuccino** — *R$ 10,00*  
+Harmonia perfeita entre espresso marcante e microespuma de leite sedosa. Cremosidade que aquece a alma, equilíbrio que satisfaz o paladar.
 
-**Café Coado**  
-Método tradicional que realça a doçura natural e as notas frutadas dos nossos grãos especiais.
+**Café Coado** — *R$ 8,00*  
+Método brasileiro tradicional que realça doçura natural, acidez brilhante e notas frutadas dos grãos especiais. Simples na forma, complexo no sabor.
 
-**Latte**  
-Suave e reconfortante, com arte em cada xícara. Perfeito para quem aprecia um café mais delicado.
+**Latte** — *R$ 11,00*  
+Suavidade reconfortante com latte art em cada xícara. Para quem aprecia o café em sua expressão mais delicada e visualmente encantadora.
+
+**Flat White** — *R$ 12,00*  
+Equilíbrio australiano entre espresso duplo e microespuma aveludada. Intensidade com textura sedosa.
 
 ### Métodos Especiais
 
-**Pour Over**  
-Preparo manual que revela todas as nuances do café. Pergunte ao barista sobre as origens disponíveis hoje.
+**Pour Over** — *R$ 14,00*  
+Extração manual em V60 que revela toda a complexidade sensorial do café. Pergunte ao barista sobre as origens single origin disponíveis hoje.
 
-**Cold Brew**  
-Extração a frio por 16 horas. Resultado: café suave, naturalmente doce e refrescante.
+**Cold Brew** — *R$ 13,00*  
+Extração lenta a frio por 16 horas. Resultado surpreendente: café naturalmente doce, baixa acidez, corpo encorpado e final refrescante. Perfeito para dias quentes.
 
-**Aeropress**  
-Método versátil que produz um café limpo e aromático em minutos.
+**Aeropress** — *R$ 13,00*  
+Método versátil que produz café limpo, aromático e encorpado em poucos minutos. Clareza de sabores com praticidade.
 
-### Acompanhamentos
+<div align="center">
 
-**Pão de Queijo Artesanal**  
-Receita mineira tradicional, quentinho e crocante por fora.
+![Cappuccino com latte art](https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29mZmVlfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500)
 
-**Croissant Francês**  
-Folhado e amanteigado, assado diariamente em nossa cozinha.
+</div>
 
-**Torta de Limão**  
-Cremosa e equilibrada, com merengue levemente tostado.
+### Harmonizações Perfeitas
 
-**Brownie de Chocolate Belga**  
-Intenso e úmido, harmoniza perfeitamente com nosso espresso.
+**Pão de Queijo Artesanal** — *R$ 8,00*  
+Receita mineira autêntica com queijos selecionados. Quentinho, crocante por fora e macio por dentro.
+
+**Croissant Francês** — *R$ 12,00*  
+Folhado amanteigado com 72 camadas, assado diariamente. Textura crocante que se desfaz na boca.
+
+**Torta de Limão Siciliano** — *R$ 15,00*  
+Equilíbrio perfeito entre acidez marcante e doçura controlada. Merengue italiano levemente tostado. Refrescante e sofisticada.
+
+**Brownie de Chocolate Belga** — *R$ 14,00*  
+Intensidade cacauada com textura úmida e fudgy. Harmonização ideal com espresso ou café coado.
+
+**Bolo de Cenoura com Brigadeiro** — *R$ 13,00*  
+Clássico brasileiro reinventado. Massa fofíssima e cobertura generosa que remete à infância.
 
 ---
+
+<div align="center">
 
 ![Xícara de café especial](https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500)
 
+</div>
+
 ## Origens em Destaque
 
-Mensalmente, selecionamos cafés de diferentes regiões para você explorar novos territórios de sabor.
+A cada mês, viajamos sensorialmente para diferentes regiões cafeeiras do mundo, trazendo grãos especiais para você explorar novos territórios de sabor e aroma.
 
-**Este Mês: Etiópia Yirgacheffe**  
-Notas de bergamota, jasmim e frutas vermelhas. Um café floral e complexo, ideal para métodos filtrados.
+**Origem do Mês: Etiópia Yirgacheffe**  
+*Notas sensoriais:* bergamota, jasmim, frutas vermelhas e mel silvestre  
+*Processo:* lavado  
+*Altitude:* 1.800 - 2.200m  
+Café floral e etéreo, com acidez vibrante de frutas cítricas. Complexidade aromática que remete ao berço africano do café. Ideal para métodos filtrados que revelam sua transparência.
 
-**Sempre Disponível: Blend da Casa**  
-Nossa assinatura: combinação de grãos brasileiros e colombianos. Chocolate, nozes e caramelo em equilíbrio perfeito.
+**Sempre Disponível: Blend Assinatura da Casa**  
+*Composição:* 60% Brasil (Cerrado Mineiro) + 40% Colômbia (Huila)  
+*Notas sensoriais:* chocolate ao leite, avelã torrada, caramelo e mel  
+Nossa identidade em forma de café. Corpo equilibrado, doçura natural pronunciada e final prolongado. Versátil para qualquer método de preparo.
 
 ---
+
+<div align="center">
+
+![Ambiente acolhedor da cafeteria](https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNvZmZlZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500)
+
+</div>
 
 ## Visite-nos
 
 **Endereço**  
 Rua das Flores, 234 - Centro  
-Belo Horizonte, MG
+Belo Horizonte, MG  
+CEP: 30110-010
 
 **Horário de Funcionamento**  
 Segunda a Sexta: 7h às 20h  
-Sábados e Domingos: 8h às 18h
+Sábados: 8h às 18h  
+Domingos e Feriados: 8h às 16h
 
 **Contato**  
-Telefone: (31) 3333-4444  
-Instagram: @graosearomas  
-Email: contato@graosearomas.com.br
+📞 Telefone: (31) 3333-4444  
+📱 WhatsApp: (31) 99999-8888  
+📷 Instagram: [@graosearomas](https://instagram.com/graosearomas)  
+✉️ Email: contato@graosearomas.com.br
 
 ---
 
-## Programa de Fidelidade
+## Programa de Fidelidade — Clube G&A
 
-Faça parte do nosso clube de café. A cada 10 cafés, o 11º é por nossa conta. Além disso, membros recebem descontos exclusivos em grãos para levar para casa e acesso antecipado às nossas origens especiais.
+Torne-se membro do nosso círculo de apreciadores e desfrute de benefícios exclusivos:
+
+- A cada 10 cafés consumidos, ganhe o 11º gratuitamente
+- 15% de desconto na compra de grãos para levar para casa
+- Acesso antecipado às origens especiais de edição limitada
+- Convites para degustações e workshops sobre café
+- Bônus especial no mês do seu aniversário
+
+**Como participar:** Peça seu cartão fidelidade no caixa. É gratuito e sem mensalidades.
 
 ---
 
-### Compromisso com a Sustentabilidade
+## Compromisso com a Sustentabilidade
 
-Acreditamos em um café que faz bem para todos. Trabalhamos diretamente com produtores que praticam agricultura sustentável, pagamos preço justo e investimos em embalagens biodegradáveis. Nossas xícaras e copos são 100% recicláveis ou compostáveis.
+Acreditamos que café bom é café que faz bem a todos os envolvidos na cadeia. Nosso compromisso vai além da xícara:
+
+**Comércio Direto e Justo**  
+Compramos diretamente de pequenos produtores familiares, pagando valores justos que valorizam o trabalho agrícola e incentivam práticas sustentáveis.
+
+**Agricultura Regenerativa**  
+Priorizamos parceiros que investem em biodiversidade, preservação de nascentes e cultivo sombreado, contribuindo para a saúde do solo e do ecossistema.
+
+**Zero Desperdício**  
+Nossos copos e embalagens são 100% biodegradáveis ou recicláveis. A borra de café é doada para compostagem comunitária. Cada detalhe importa.
 
 ---
+
+<div align="center">
 
 **Grãos & Aromas Cafeteria**  
-Onde cada xícara é uma experiência
+*Onde cada xícara é uma jornada sensorial*
+
+---
+
+*Siga-nos nas redes sociais e faça parte da nossa comunidade de apaixonados por café*
+
+</div>
