@@ -3,9 +3,10 @@
 
 <head>
      <meta charset="UTF-8">
-     <link rel="icon" href="./img/favcoffee.svg" type="image/svg+xml">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>@devcaffe</title>
+     <meta name="description" content="Grãos & Aromas - Seu refúgio de café artesanal">
+     <link rel="icon" href="./img/favcoffee.svg" type="image/svg+xml">
+     <title>Grãos & Aromas Cafeteria</title>
      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
      <style>
@@ -20,11 +21,11 @@
           }
 
           body {
-               font-family: Georgia;
-               background-color: whitesmoke;
-               color: black;
-               line-height: 1.6;
-               margin-top: 90px;
+               font-family: Georgia, 'Times New Roman', serif;
+               background-color: #f5f5f5;
+               color: #1a1a1a;
+               line-height: 1.7;
+               margin-top: 85px;
                font-size: 16px;
           }
 
@@ -33,102 +34,123 @@
                top: 0;
                left: 0;
                width: 100%;
-               background-color: black;
+               background-color: #000000;
                display: flex;
                align-items: center;
                justify-content: flex-start;
-               gap: 30px;
-               padding: 20px 40px;
-               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+               gap: 32px;
+               padding: 22px 45px;
+               box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
                z-index: 1000;
           }
 
           .navbar img {
                border-radius: 50%;
-               width: 25px;
-               height: 25px;
+               width: 28px;
+               height: 28px;
                object-fit: cover;
-               border: 2px solid orange;
-               box-shadow: 0 2px 8px rgba(255, 165, 0, 0.3);
+               border: 2px solid #ff8c00;
+               box-shadow: 0 0 12px rgba(255, 140, 0, 0.4);
           }
 
           .navbar .md-link {
-               color: orange;
+               color: #ff8c00;
                text-decoration: none;
                font-weight: 500;
-               margin: 0 15px;
+               margin: 0;
                cursor: pointer;
                font-size: 15px;
+               transition: opacity 0.2s ease;
+          }
+
+          .navbar .md-link:active {
+               opacity: 0.7;
           }
 
           .content {
-               max-width: 800px;
-               margin: 0 auto 50px auto;
-               padding: 35px;
-               background-color: white;
-               border-radius: 8px;
-               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-               border: 1px solid #ddd;
+               max-width: 820px;
+               margin: 0 auto 60px auto;
+               padding: 40px;
+               background-color: #ffffff;
+               border-radius: 10px;
+               box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+               border: 1px solid #e5e5e5;
           }
 
           .content h1 {
-               font-size: 2.3em;
-               margin-bottom: 20px;
-               padding-bottom: 15px;
-               border-bottom: 2px solid #e0e0e0;
-               scroll-margin-top: 100px;
+               font-size: 2.4em;
+               margin-bottom: 24px;
+               padding-bottom: 18px;
+               border-bottom: 2px solid #e8e8e8;
+               scroll-margin-top: 110px;
+               color: #1a1a1a;
           }
 
           .content h2 {
-               font-size: 1.8em;
-               margin-top: 35px;
-               margin-bottom: 15px;
-               scroll-margin-top: 100px;
+               font-size: 1.85em;
+               margin-top: 40px;
+               margin-bottom: 18px;
+               scroll-margin-top: 110px;
+               color: #2a2a2a;
           }
 
           .content h3 {
                font-size: 1.5em;
-               margin-top: 25px;
-               margin-bottom: 12px;
-               scroll-margin-top: 100px;
+               margin-top: 30px;
+               margin-bottom: 14px;
+               scroll-margin-top: 110px;
+               color: #333333;
           }
 
           .content p,
           .content li {
-               margin-bottom: 15px;
+               margin-bottom: 16px;
+               color: #3a3a3a;
+          }
+
+          .content ul,
+          .content ol {
+               margin-left: 24px;
+               margin-bottom: 18px;
+          }
+
+          .content li {
+               padding-left: 6px;
           }
 
           .content code {
-               background-color: #f5f5f5;
-               padding: 3px 8px;
-               border-radius: 4px;
-               font-family: Georgia;
+               background-color: #f8f8f8;
+               padding: 3px 9px;
+               border-radius: 5px;
+               font-family: 'Courier New', monospace;
                font-size: 0.9em;
-               border: 1px solid #ddd;
+               border: 1px solid #e0e0e0;
+               color: #d14;
           }
 
           .content pre {
-               background-color: #f5f5f5;
-               padding: 18px;
-               border-radius: 6px;
+               background-color: #f8f8f8;
+               padding: 20px;
+               border-radius: 8px;
                overflow-x: auto;
-               margin-bottom: 20px;
-               border: 1px solid #ddd;
-               border-left: 4px solid black;
-               box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+               margin-bottom: 24px;
+               border: 1px solid #e0e0e0;
+               border-left: 4px solid #000000;
+               box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
           }
 
           .content pre code {
                background-color: transparent;
                padding: 0;
                border: none;
+               color: #1a1a1a;
           }
 
           .content blockquote {
-               border-left: 4px solid black;
-               padding-left: 20px;
-               margin: 20px 0;
-               color: #333;
+               border-left: 4px solid #000000;
+               padding-left: 22px;
+               margin: 24px 0;
+               color: #4a4a4a;
                font-style: italic;
           }
 
@@ -136,125 +158,188 @@
                max-width: 100%;
                height: auto;
                display: block;
-               margin: 25px auto;
-               border-radius: 8px;
-               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-               border: 1px solid #e0e0e0;
+               margin: 30px auto;
+               border-radius: 10px;
+               box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+               border: 1px solid #e8e8e8;
           }
 
           .content img:first-of-type {
-               margin-top: 10px;
+               margin-top: 12px;
           }
 
           .content a {
-               color: orange;
+               color: #ff8c00;
                text-decoration: none;
+               transition: opacity 0.2s ease;
           }
 
-          .tech-skills {
-               display: flex;
-               flex-wrap: wrap;
-               gap: 12px;
-               margin-top: 15px;
+          .content a:active {
+               opacity: 0.7;
           }
 
-          .tech-badge {
-               background-color: black;
-               color: orange;
-               border-radius: 5px;
-               padding: 8px 14px;
-               font-size: 0.95em;
-               font-weight: 500;
-               display: inline-block;
-               border: 1px solid #333;
-               box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          .content hr {
+               border: none;
+               border-top: 1px solid #e8e8e8;
+               margin: 35px 0;
+          }
+
+          .content table {
+               width: 100%;
+               border-collapse: collapse;
+               margin: 24px 0;
+          }
+
+          .content table th,
+          .content table td {
+               border: 1px solid #e0e0e0;
+               padding: 12px;
+               text-align: left;
+          }
+
+          .content table th {
+               background-color: #f8f8f8;
+               font-weight: 600;
           }
 
           footer {
                text-align: center;
-               color: black;
-               padding: 30px 20px;
+               color: #1a1a1a;
+               padding: 35px 20px;
                font-size: 15px;
                background-color: transparent;
           }
 
           footer a {
-               color: black;
+               color: #1a1a1a;
                font-weight: 500;
                text-decoration: none;
+               transition: opacity 0.2s ease;
+          }
+
+          footer a:active {
+               opacity: 0.7;
           }
 
           @media (max-width: 768px) {
                body {
-                    margin-top: 80px;
+                    margin-top: 75px;
                     font-size: 15px;
                }
 
                .navbar {
-                    padding: 16px 25px;
-                    gap: 20px;
+                    padding: 18px 25px;
+                    gap: 22px;
                }
 
                .navbar img {
-                    width: 25px;
-                    height: 25px;
+                    width: 26px;
+                    height: 26px;
                }
 
                .navbar .md-link {
                     font-size: 14px;
-                    margin: 0 10px;
                }
 
                .content {
-                    margin: 0 25px 50px 25px;
-                    padding: 30px 25px;
+                    margin: 0 20px 50px 20px;
+                    padding: 32px 24px;
+                    border-radius: 8px;
                }
 
                .content h1 {
-                    font-size: 1.9em;
-                    margin-bottom: 18px;
+                    font-size: 2em;
+                    margin-bottom: 20px;
+                    padding-bottom: 16px;
                }
 
                .content h2 {
-                    font-size: 1.6em;
-                    margin-top: 30px;
+                    font-size: 1.65em;
+                    margin-top: 32px;
+                    margin-bottom: 16px;
                }
 
                .content h3 {
                     font-size: 1.4em;
+                    margin-top: 26px;
                }
 
                .content p,
                .content li {
-                    margin-bottom: 18px;
+                    margin-bottom: 16px;
+               }
+
+               .content ul,
+               .content ol {
+                    margin-left: 20px;
                }
 
                .content img {
-                    margin: 20px auto;
+                    margin: 24px auto;
+                    border-radius: 8px;
                }
 
                .content img:first-of-type {
-                    margin-top: 8px;
+                    margin-top: 10px;
                }
 
-               .tech-badge {
-                    font-size: 0.9em;
-                    padding: 7px 12px;
+               .content pre {
+                    padding: 16px;
+                    border-radius: 6px;
+               }
+
+               .content blockquote {
+                    padding-left: 18px;
+                    margin: 20px 0;
+               }
+
+               .content hr {
+                    margin: 28px 0;
                }
 
                footer {
                     font-size: 14px;
-                    padding: 35px 25px;
+                    padding: 40px 25px;
+               }
+          }
+
+          @media (max-width: 480px) {
+               body {
+                    margin-top: 70px;
+               }
+
+               .navbar {
+                    padding: 16px 20px;
+                    gap: 18px;
+               }
+
+               .navbar .md-link {
+                    font-size: 13px;
+               }
+
+               .content {
+                    margin: 0 16px 40px 16px;
+                    padding: 28px 20px;
+               }
+
+               .content h1 {
+                    font-size: 1.8em;
+               }
+
+               .content h2 {
+                    font-size: 1.5em;
+               }
+
+               .content h3 {
+                    font-size: 1.3em;
                }
           }
      </style>
 </head>
 
 <body>
-     <div id="top"></div>
-
-     <nav class="navbar" id="nav-links" aria-label="Navegação principal">
-          <img src="./img/coffee.png" alt="Logo Guilherme Ribeiro">
+     <nav class="navbar" id="nav-links" role="navigation" aria-label="Navegação principal">
+          <img src="./img/coffee.png" alt="Logo Grãos & Aromas">
      </nav>
 
      <main class="content" id="content" role="main">
@@ -280,6 +365,7 @@
                link.textContent = file.replace('.md', '');
                link.className = 'md-link';
                link.href = '#';
+               link.setAttribute('role', 'button');
                link.addEventListener('click', (e) => {
                     e.preventDefault();
                     loadMarkdown(file);
