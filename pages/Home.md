@@ -1,10 +1,11 @@
 <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
   <img 
-    src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZmZlZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1280&h=720" 
+    src="./img/photo001.avif" 
     alt="Cafeteria acolhedora"
     style="width: 100%; max-width: 1280px; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; border: 1px solid #000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
   >
 </div>
+
 
 # Grãos & Aromas Cafeteria
 
@@ -24,7 +25,7 @@ Acreditamos que o café é mais que uma bebida: é cultura, é conexão, é o pr
 
 <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
   <img 
-    src="https://images.unsplash.com/photo-1525088553748-01d6e210e00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZmZlZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1280&h=720" 
+    src="./img/photo002.avif" 
     alt="Cafeteria acolhedora"
     style="width: 100%; max-width: 1280px; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; border: 1px solid #000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
   >
@@ -75,7 +76,7 @@ Método versátil que produz café limpo, aromático e encorpado em poucos minut
 
 <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
   <img 
-    src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29mZmVlfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=1280&h=720" 
+    src="./img/photo003.avif" 
     alt="Cafeteria acolhedora"
     style="width: 100%; max-width: 1280px; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; border: 1px solid #000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
   >
@@ -102,7 +103,7 @@ Clássico brasileiro reinventado. Massa fofíssima e cobertura generosa que reme
 
 <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
   <img 
-    src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=1280&h=720" 
+    src="./img/photo004.avif" 
     alt="Cafeteria acolhedora"
     style="width: 100%; max-width: 1280px; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; border: 1px solid #000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
   >
@@ -127,7 +128,7 @@ Nossa identidade em forma de café. Corpo equilibrado, doçura natural pronuncia
 
 <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
   <img 
-    src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNvZmZlZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1280&h=720" 
+    src="./img/photo005.avif" 
     alt="Cafeteria acolhedora"
     style="width: 100%; max-width: 1280px; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; border: 1px solid #000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
   >
