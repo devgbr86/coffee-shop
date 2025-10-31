@@ -4,27 +4,34 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Grãos & Aromas - Seu refúgio de café artesanal">
-     <link rel="icon" href="./img/favcoffee.svg" type="image/svg+xml">
-     <title>Grãos & Aromas Cafeteria</title>
+     <meta name="description" content="@devcaffe">
+     <link rel="icon" href="./img/favcoreicon.svg" type="image/svg+xml">
+     <title>@devcaffe</title>
+
+     <!-- Stack do Projeto:
+          - TailwindCSS: estilos utilitários e responsividade
+          - Marked.js: conversão de Markdown para HTML
+          - Prism.js: destaque de sintaxe para código
+          - DOMPurify: sanitização segura do HTML gerado
+     -->
+
+     <!-- Tailwind CSS -->
      <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- Marked.js -->
      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-     <script>
-          tailwind.config = {
-               theme: {
-                    extend: {
-                         colors: {
-                              'cafe': '#ff8c00',
-                              'cafe-dark': '#e67e00',
-                         },
-                         fontFamily: {
-                              'serif': ['Georgia', 'Times New Roman', 'serif'],
-                         }
-                    }
-               }
-          }
-     </script>
+     <!-- Prism.js -->
+     <link href="https://unpkg.com/prismjs/themes/prism-tomorrow.css" rel="stylesheet">
+     <script src="https://unpkg.com/prismjs/prism.js"></script>
+     <script src="https://unpkg.com/prismjs/components/prism-javascript.min.js"></script>
+     <script src="https://unpkg.com/prismjs/components/prism-bash.min.js"></script>
+
+     <!-- DOMPurify -->
+     <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.1/dist/purify.min.js"></script>
+
+     <!-- Font -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
      <style>
           html {
@@ -32,177 +39,326 @@
           }
 
           body {
-               font-family: Georgia, 'Times New Roman', serif;
+               font-family: 'Roboto Mono', monospace;
+               background-color: #f8f9fa;
+               color: #111;
+               line-height: 1.75;
+               padding-top: 120px;
+          }
+
+          /* Navbar */
+          .navbar {
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               background-color: #000;
+               color: #fff;
+               display: flex;
+               align-items: center;
+               flex-wrap: wrap;
+               padding: 8px 20px;
+               gap: 14px;
+               z-index: 1000;
+               border-bottom: 1px solid #222;
+               box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+          }
+
+          .navbar-icon {
+               width: 28px;
+               height: 28px;
+               border-radius: 4px;
+               background-color: #fff;
+               padding: 2px;
+               flex-shrink: 0;
           }
 
           .navbar-link {
-               transition: opacity 0.2s ease;
+               color: #f8f9fa;
+               text-decoration: none;
+               font-size: 15px;
+               padding: 4px 10px;
+               border-radius: 4px;
+               display: inline-block;
           }
 
-          .navbar-link:active {
-               opacity: 0.7;
+          .navbar-link.active {
+               background-color: #fff;
+               color: #000;
+               font-weight: 600;
           }
 
-          .content-link {
-               transition: opacity 0.2s ease;
+          /* Conteúdo principal */
+          .content-wrapper {
+               max-width: 880px;
+               margin: 80px auto 100px;
+               padding: 48px 52px;
+               background-color: #fff;
+               border-radius: 10px;
+               border: 1px solid #000;
+               box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
           }
 
-          .content-link:active {
-               opacity: 0.7;
+          .content-wrapper h1,
+          .content-wrapper h2,
+          .content-wrapper h3,
+          .content-wrapper h4,
+          .content-wrapper h5 {
+               color: #000;
+               font-weight: 600;
+               scroll-margin-top: 130px;
+               line-height: 1.3;
           }
 
-          .content h1,
-          .content h2,
-          .content h3 {
-               scroll-margin-top: 120px;
+          .content-wrapper h1 {
+               font-size: 2.5em;
+               border-bottom: 3px solid #000;
+               padding-bottom: 16px;
+               margin-bottom: 32px;
           }
 
-          .content code {
-               font-family: 'Courier New', monospace;
+          .content-wrapper h2 {
+               font-size: 2em;
+               border-bottom: 2px solid #f2f2f2;
+               margin-top: 56px;
+               margin-bottom: 22px;
+               padding-bottom: 10px;
           }
 
-          .content pre code {
-               background-color: transparent;
-               padding: 0;
-               border: none;
+          .content-wrapper h3 {
+               font-size: 1.6em;
+               margin-top: 40px;
+               margin-bottom: 18px;
           }
 
-          .content blockquote {
+          .content-wrapper p {
+               margin-bottom: 22px;
+               color: #111;
+          }
+
+          .content-wrapper ul,
+          .content-wrapper ol {
+               margin-left: 32px;
+               margin-bottom: 26px;
+          }
+
+          .content-wrapper li {
+               margin-bottom: 10px;
+          }
+
+          .content-wrapper code {
+               background-color: #f3f3f3;
+               color: #d35400;
+               padding: 3px 7px;
+               border-radius: 4px;
+               border: 1px solid #ccc;
+               font-size: 0.9em;
+          }
+
+          .content-wrapper pre {
+               background-color: #0d1117;
+               padding: 22px 26px;
+               border-radius: 8px;
+               border-left: 4px solid #ff8c00;
+               overflow-x: auto;
+               margin: 34px 0;
+          }
+
+          .content-wrapper pre code {
+               color: #c9d1d9;
+               font-size: 0.9em;
+               line-height: 1.6;
+          }
+
+          .content-wrapper blockquote {
+               border-left: 4px solid #000;
+               background-color: #f6f6f6;
+               padding: 20px 26px;
+               border-radius: 5px;
+               margin: 32px 0;
                font-style: italic;
+               color: #222;
+          }
+
+          .content-wrapper img {
+               max-width: 100%;
+               border-radius: 8px;
+               margin: 36px 0;
+               border: 1px solid #000;
+               box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+
+          .content-wrapper table {
+               width: 100%;
+               border-collapse: collapse;
+               margin: 36px 0;
+               border: 1px solid #000;
+               border-radius: 8px;
+               overflow: hidden;
+          }
+
+          .content-wrapper th,
+          .content-wrapper td {
+               border: 1px solid #000;
+               padding: 12px 16px;
+               text-align: left;
+          }
+
+          .content-wrapper th {
+               background-color: #f2f2f2;
+               font-weight: 600;
+          }
+
+          .content-wrapper tr:nth-child(even) {
+               background-color: #fafafa;
+          }
+
+          .content-wrapper a {
+               color: #ff8c00;
+               text-decoration: none;
+               font-weight: 500;
+          }
+
+          .content-wrapper hr {
+               border: none;
+               border-top: 2px solid #000;
+               margin: 44px 0;
+          }
+
+          /* Footer */
+          footer {
+               text-align: center;
+               padding: 40px 20px;
+               font-size: 14px;
+               color: #333;
+          }
+
+          footer a {
+               color: #000;
+               font-weight: 600;
+               border-bottom: 2px solid #ff8c00;
+               text-decoration: none;
+          }
+
+          /* Responsividade */
+          @media (max-width:768px) {
+               body {
+                    padding-top: 100px;
+               }
+
+               .navbar {
+                    padding: 8px 14px;
+                    gap: 10px;
+               }
+
+               .navbar-link {
+                    font-size: 14px;
+                    padding: 4px 8px;
+               }
+
+               .content-wrapper {
+                    margin: 50px 14px 70px;
+                    padding: 32px 22px;
+               }
+
+               .content-wrapper h1 {
+                    font-size: 2em;
+               }
+
+               .content-wrapper h2 {
+                    font-size: 1.6em;
+               }
+
+               .content-wrapper h3 {
+                    font-size: 1.3em;
+               }
           }
      </style>
 </head>
 
-<body class="bg-gray-50 text-gray-900 mt-20 sm:mt-24 text-base leading-relaxed">
-
-     <nav class="fixed top-0 left-0 w-full bg-black flex items-center justify-start gap-4 sm:gap-6 md:gap-8 px-4 sm:px-6 md:px-11 py-4 sm:py-5 shadow-lg z-[1000]"
-          id="nav-links" role="navigation" aria-label="Navegação principal">
-          <img src="./img/coffee.png" alt="Logo Grãos & Aromas"
-               class="rounded-full w-6 h-6 sm:w-7 sm:h-7 object-cover border-2 border-cafe shadow-[0_0_12px_rgba(255,140,0,0.4)]">
+<body>
+     <nav class="navbar" id="nav-links" role="navigation" aria-label="Navegação principal">
+          <img src="./img/favcoffee.svg" alt="Logo Dev Wiki" class="navbar-icon">
      </nav>
 
-     <main class="max-w-[820px] mx-auto mb-20 px-4 sm:px-6 md:px-10 py-6 sm:py-8 md:py-10 bg-white rounded-lg sm:rounded-xl shadow-lg border border-gray-200 content"
-          id="content" role="main">
-          <h1 class="text-3xl sm:text-4xl mb-6 pb-4 border-b-2 border-gray-300 text-gray-900">Carregando...</h1>
+     <main class="content-wrapper" id="content" role="main">
+          <h1>Carregando conteúdo...</h1>
      </main>
 
-     <footer class="text-center text-gray-700 py-8 px-4 text-sm sm:text-base bg-transparent">
+     <footer>
           <p>
-               <a href="https://github.com/devgbr86" target="_blank" rel="noopener noreferrer"
-                    class="text-gray-700 font-medium no-underline transition-opacity duration-200 active:opacity-70">
-                    github.com/devgbr86
-               </a>
+               <a href="https://github.com/devgbr86" target="_blank" rel="noopener noreferrer">github.com/devgbr86</a>
+               &nbsp;•&nbsp;
+               <a href="https://www.linkedin.com/in/devgbr" target="_blank"
+                    rel="noopener noreferrer">linkedin.com/in/devgbr</a> &nbsp;•&nbsp;
+               <a href="mailto:topverbs@gmail.com">topverbs@gmail.com</a>
           </p>
      </footer>
 
      <script>
           const contentFolder = 'pages/';
-          const files = ['Home.md', 'Carta.md', 'Bebidas.md', 'Contato.md'];
+          const files = [
+               { name: 'Home.md', label: 'Home' },
+               { name: 'Bebidas.md', label: 'Bebidas' },
+               { name: 'Carta.md', label: 'Cardápio' },
+               { name: 'Mail.md', label: 'Contato' }
+          ];
+
           const navContainer = document.getElementById('nav-links');
           const contentContainer = document.getElementById('content');
 
-          files.forEach(file => {
+          function removeEmojis(text) {
+               return text.replace(/[\p{Extended_Pictographic}]/gu, '').trim();
+          }
+
+          function applySyntaxHighlighting() {
+               contentContainer.querySelectorAll('pre code').forEach(block => Prism.highlightElement(block));
+          }
+
+          async function loadMarkdown(file = 'Home.md') {
+               try {
+                    const res = await fetch(`${contentFolder}${file}`);
+                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+                    const markdown = await res.text();
+                    const cleanMarkdown = removeEmojis(markdown);
+                    const rawHtml = marked.parse(cleanMarkdown);
+                    const sanitized = DOMPurify.sanitize(rawHtml, { ADD_TAGS: ['span', 'div'], ADD_ATTR: ['id', 'class'] });
+                    contentContainer.innerHTML = sanitized;
+
+                    // Lazy load images
+                    contentContainer.querySelectorAll('img').forEach(img => img.setAttribute('loading', 'lazy'));
+
+                    applySyntaxHighlighting();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+               } catch (err) {
+                    contentContainer.innerHTML = `
+                    <h1>Erro ao carregar</h1>
+                    <p>Não foi possível carregar o arquivo <code>${file}</code>.</p>
+                    <p>Verifique se ele existe em <code>${contentFolder}</code>.</p>
+                `;
+               }
+          }
+
+          // Configurar navbar links
+          files.forEach((file, index) => {
                const link = document.createElement('a');
-               link.textContent = file.replace('.md', '');
-               link.className = 'text-cafe no-underline font-medium cursor-pointer text-sm sm:text-base navbar-link';
+               link.textContent = file.label;
+               link.className = 'navbar-link';
                link.href = '#';
-               link.setAttribute('role', 'button');
-               link.addEventListener('click', (e) => {
+               if (index === 0) link.classList.add('active');
+               link.addEventListener('click', e => {
                     e.preventDefault();
-                    loadMarkdown(file);
+                    document.querySelectorAll('.navbar-link').forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                    loadMarkdown(file.name);
                });
                navContainer.appendChild(link);
           });
 
-          async function loadMarkdown(file = 'Home.md') {
-               try {
-                    const response = await fetch(`${contentFolder}${file}`);
-                    if (!response.ok) throw new Error('Erro ao carregar o arquivo Markdown.');
-
-                    const markdown = await response.text();
-                    const html = marked.parse(markdown);
-
-                    contentContainer.innerHTML = html;
-                    applyStylesToContent();
-               } catch (error) {
-                    console.error(error);
-                    contentContainer.innerHTML = '<p class="text-gray-600">Erro ao carregar o conteúdo.</p>';
-               }
-          }
-
-          function applyStylesToContent() {
-               const content = document.getElementById('content');
-
-               content.querySelectorAll('h1').forEach(el => {
-                    el.className = 'text-3xl sm:text-4xl mb-6 pb-4 border-b-2 border-gray-300 text-gray-900 font-semibold';
-               });
-
-               content.querySelectorAll('h2').forEach(el => {
-                    el.className = 'text-2xl sm:text-3xl mt-12 mb-6 text-gray-800 font-semibold';
-               });
-
-               content.querySelectorAll('h3').forEach(el => {
-                    el.className = 'text-xl sm:text-2xl mt-10 mb-5 text-gray-700 font-semibold';
-               });
-
-               content.querySelectorAll('p').forEach(el => {
-                    el.className = 'mb-5 text-gray-700 leading-relaxed';
-               });
-
-               content.querySelectorAll('ul, ol').forEach(el => {
-                    el.className = 'ml-5 sm:ml-6 mb-6 space-y-3';
-               });
-
-               content.querySelectorAll('li').forEach(el => {
-                    el.className = 'pl-2 text-gray-700 leading-relaxed';
-               });
-
-               content.querySelectorAll('code').forEach(el => {
-                    if (el.parentElement.tagName !== 'PRE') {
-                         el.className = 'bg-gray-100 px-2 py-1 rounded border border-gray-300 text-sm text-red-600';
-                    }
-               });
-
-               content.querySelectorAll('pre').forEach(el => {
-                    el.className = 'bg-gray-100 p-4 sm:p-5 rounded-lg sm:rounded-xl overflow-x-auto mb-6 border-2 border-gray-300 border-l-4 border-l-black shadow-md';
-               });
-
-               content.querySelectorAll('blockquote').forEach(el => {
-                    el.className = 'border-l-4 border-black pl-4 sm:pl-5 my-6 text-gray-600 italic';
-               });
-
-               content.querySelectorAll('img').forEach(el => {
-                    el.className = 'w-full h-auto block my-8 rounded-lg sm:rounded-xl shadow-lg border-2 border-gray-200 object-cover';
-               });
-
-               content.querySelectorAll('a').forEach(el => {
-                    el.className = 'text-cafe no-underline font-medium content-link';
-               });
-
-               content.querySelectorAll('hr').forEach(el => {
-                    el.className = 'border-0 border-t-2 border-gray-300 my-10';
-               });
-
-               content.querySelectorAll('table').forEach(el => {
-                    el.className = 'w-full border-collapse my-6 shadow-md rounded-lg overflow-hidden';
-               });
-
-               content.querySelectorAll('th, td').forEach(el => {
-                    el.className = 'border border-gray-300 p-3 text-left text-sm sm:text-base';
-               });
-
-               content.querySelectorAll('th').forEach(el => {
-                    el.className = 'border border-gray-300 p-3 text-left bg-gray-100 font-semibold text-gray-900 text-sm sm:text-base';
-               });
-
-               const firstImg = content.querySelector('img');
-               if (firstImg) {
-                    firstImg.classList.remove('my-8');
-                    firstImg.classList.add('mt-4', 'mb-8');
-               }
-          }
-
-          document.addEventListener('DOMContentLoaded', () => loadMarkdown());
+          document.addEventListener('DOMContentLoaded', () => {
+               loadMarkdown(files[0].name);
+          });
      </script>
 </body>
 
