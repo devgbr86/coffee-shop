@@ -40,7 +40,18 @@
           .navbar-link.active {
                font-weight: 700;
                border-bottom: 2px solid #111;
-               /* corrigido */
+               position: relative;
+          }
+
+          /* Badge para o link ativo */
+          .navbar-link.active::after {
+               content: '●';
+               position: absolute;
+               top: -6px;
+               right: -6px;
+               font-size: 0.75rem;
+               color: #f59e0b;
+               /* laranja suave */
           }
      </style>
 </head>
