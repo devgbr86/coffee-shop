@@ -34,13 +34,28 @@
                border-bottom: 2px solid #000;
           }
 
+          /* Badge style for page links */
+          .page-link {
+               display: inline-block;
+               margin-right: 0.5rem;
+               margin-bottom: 0.5rem;
+               padding: 0.3rem 0.6rem;
+               background-color: #111;
+               color: #fff;
+               font-size: 0.875rem;
+               font-weight: 500;
+               border-radius: 9999px;
+               text-decoration: none;
+               transition: none !important;
+          }
+
           .content-wrapper h1,
           .content-wrapper h2,
           .content-wrapper h3 {
                scroll-margin-top: 110px;
           }
 
-          /* Remove hover effects */
+          /* Remove hover effects globally */
           a,
           button {
                transition: none !important;
@@ -50,35 +65,18 @@
 
 <body class="bg-gray-100 text-black">
 
-     <!-- Navbar -->
+     <!-- Navbar (logo only) -->
      <nav class="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md border-b border-gray-800">
           <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-               <!-- Logo -->
                <div class="flex items-center gap-2">
                     <img src="./img/favcoffee.svg" alt="Logo Grãos & Aromas" class="w-9 h-9 bg-white p-1 rounded">
                     <span class="text-sm font-semibold tracking-wide">Grãos & Aromas</span>
                </div>
-
-               <!-- Botão menu mobile -->
-               <button id="menu-btn" class="md:hidden flex flex-col justify-between w-6 h-4 focus:outline-none"
-                    aria-label="Abrir menu">
-                    <span class="w-full h-0.5 bg-white"></span>
-                    <span class="w-full h-0.5 bg-white"></span>
-                    <span class="w-full h-0.5 bg-white"></span>
-               </button>
-
-               <!-- Links Navbar -->
-               <div id="menu" class="hidden md:flex gap-5 items-center text-sm">
-                    <!-- links serão injetados via JS -->
-               </div>
-          </div>
-
-          <!-- Menu Mobile -->
-          <div id="mobile-menu"
-               class="hidden flex-col md:hidden bg-black border-t border-gray-700 text-center p-4 space-y-3">
-               <!-- links serão injetados via JS -->
           </div>
      </nav>
+
+     <!-- Page links badges -->
+     <div id="page-links" class="max-w-4xl mx-auto mt-6 px-8 md:px-12 flex flex-wrap"></div>
 
      <!-- Conteúdo -->
      <main id="content"
@@ -90,10 +88,7 @@
      <footer class="text-center py-10 text-gray-700 text-sm">
           <p>
                <a href="https://github.com/devgbr86" target="_blank" rel="noopener noreferrer">GitHub</a>
-               &nbsp;•&nbsp;
-               <a href="https://www.linkedin.com/in/devgbr" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-               &nbsp;•&nbsp;
-               <a href="mailto:topverbs@gmail.com">Email</a>
+
           </p>
      </footer>
 
@@ -106,9 +101,8 @@
                { name: 'Mail.md', label: 'Contato' }
           ];
 
-          const navMenu = document.getElementById('menu');
-          const mobileMenu = document.getElementById('mobile-menu');
           const contentContainer = document.getElementById('content');
+          const pageLinksContainer = document.getElementById('page-links');
 
           function removeEmojis(text) {
                return text.replace(/[\p{Extended_Pictographic}]/gu, '').trim();
@@ -157,40 +151,28 @@
                }
           }
 
-          function buildLinks(container, isMobile = false) {
+          function buildPageLinks() {
                files.forEach((file, index) => {
                     const link = document.createElement('a');
                     link.textContent = file.label;
-                    link.className = 'navbar-link block text-sm py-2';
-                    if (!isMobile) link.classList.add('px-2');
-                    if (index === 0) link.classList.add('active');
                     link.href = '#';
+                    link.className = 'page-link';
+                    if (index === 0) link.classList.add('active');
+
                     link.addEventListener('click', e => {
                          e.preventDefault();
-                         document.querySelectorAll('.navbar-link').forEach(l => l.classList.remove('active'));
+                         document.querySelectorAll('.page-link').forEach(l => l.classList.remove('active'));
                          link.classList.add('active');
                          loadMarkdown(file.name);
-                         if (isMobile) toggleMenu(false);
                     });
-                    container.appendChild(link);
+
+                    pageLinksContainer.appendChild(link);
                });
           }
 
-          function toggleMenu(forceClose = null) {
-               const open = forceClose === null ? mobileMenu.classList.contains('hidden') : !forceClose;
-               if (open) {
-                    mobileMenu.classList.remove('hidden');
-               } else {
-                    mobileMenu.classList.add('hidden');
-               }
-          }
-
           document.addEventListener('DOMContentLoaded', () => {
-               buildLinks(navMenu);
-               buildLinks(mobileMenu, true);
+               buildPageLinks();
                loadMarkdown(files[0].name);
-
-               document.getElementById('menu-btn').addEventListener('click', () => toggleMenu());
           });
      </script>
 </body>
