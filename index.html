@@ -25,7 +25,13 @@
                font-family: 'Roboto Mono', monospace;
                background-color: #f8f9fa;
                color: #111;
-               padding-top: 100px;
+               padding-top: 80px;
+          }
+
+          @media (min-width: 640px) {
+               body {
+                    padding-top: 90px;
+               }
           }
 
           /* Navbar active */
@@ -37,22 +43,41 @@
           /* Badge style for page links */
           .page-link {
                display: inline-block;
-               margin-right: 0.5rem;
-               margin-bottom: 0.5rem;
-               padding: 0.3rem 0.6rem;
-               background-color: #111;
+               padding: 0.4rem 0.8rem;
+               background-color: #333;
                color: #fff;
-               font-size: 0.875rem;
+               font-size: 0.75rem;
                font-weight: 500;
                border-radius: 9999px;
                text-decoration: none;
                transition: none !important;
           }
 
+          .page-link.active {
+               background-color: #fff;
+               color: #000;
+          }
+
+          @media (min-width: 640px) {
+               .page-link {
+                    font-size: 0.875rem;
+                    padding: 0.5rem 1rem;
+               }
+          }
+
           .content-wrapper h1,
           .content-wrapper h2,
           .content-wrapper h3 {
-               scroll-margin-top: 110px;
+               scroll-margin-top: 90px;
+          }
+
+          @media (min-width: 640px) {
+
+               .content-wrapper h1,
+               .content-wrapper h2,
+               .content-wrapper h3 {
+                    scroll-margin-top: 100px;
+               }
           }
 
           /* Remove hover effects globally */
@@ -65,18 +90,17 @@
 
 <body class="bg-gray-100 text-black">
 
-     <!-- Navbar (logo only) -->
+     <!-- Navbar (logo + page links) -->
      <nav class="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md border-b border-gray-800">
-          <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-               <div class="flex items-center gap-2">
-                    <img src="./img/favcoffee.svg" alt="Logo Grãos & Aromas" class="w-9 h-9 bg-white p-1 rounded">
-                    <span class="text-sm font-semibold tracking-wide">Grãos & Aromas</span>
+          <div class="w-full flex items-center gap-4 px-4 py-3 flex-wrap sm:flex-nowrap">
+               <div class="flex items-center gap-2 flex-shrink-0">
+                    <img src="./img/favcoffee.svg" alt="Logo Grãos & Aromas"
+                         class="w-8 h-8 sm:w-9 sm:h-9 bg-white p-1 rounded">
+                    <span class="text-xs sm:text-sm font-semibold tracking-wide">Grãos & Aromas</span>
                </div>
+               <div id="page-links" class="flex flex-wrap gap-2"></div>
           </div>
      </nav>
-
-     <!-- Page links badges -->
-     <div id="page-links" class="max-w-4xl mx-auto mt-6 px-8 md:px-12 flex flex-wrap"></div>
 
      <!-- Conteúdo -->
      <main id="content"

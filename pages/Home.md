@@ -1,6 +1,6 @@
 <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
   <img 
-    src="./img/photo001.avif" 
+    src="./img/img01.avif" 
     alt="Cafeteria acolhedora"
     style="width: 100%; max-width: 1280px; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; border: 1px solid #000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
   >
@@ -28,7 +28,7 @@ Nosso compromisso com a qualidade começa na origem. Trabalhamos exclusivamente 
 
 <div style="max-width: 1280px; margin: 2rem auto; text-align: center;">
   <img 
-    src="./img/photo002.avif" 
+    src="./img/img02.avif" 
     alt="Grãos de café especiais"
     style="width: 100%; max-width: 1280px; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; border: 1px solid #000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
   >
@@ -44,7 +44,7 @@ A experiência na Grãos & Aromas vai além do café. Nosso espaço foi cuidados
 
 <div style="max-width: 1280px; margin: 2rem auto; text-align: center;">
   <img 
-    src="./img/photo003.avif" 
+    src="./img/img03.avif" 
     alt="Ambiente da cafeteria"
     style="width: 100%; max-width: 1280px; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; border: 1px solid #000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
   >
@@ -60,7 +60,7 @@ Cada xícara na Grãos & Aromas é pensada para revelar os melhores atributos do
 
 <div style="max-width: 1280px; margin: 2rem auto; text-align: center;">
   <img 
-    src="./img/photo004.avif" 
+    src="./img/img04.avif" 
     alt="Preparação de café artesanal"
     style="width: 100%; max-width: 1280px; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; border: 1px solid #000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
   >
@@ -86,7 +86,7 @@ Além do café, oferecemos uma curadoria de acompanhamentos, como bolos, croissa
 
 <div style="max-width: 1280px; margin: 2rem auto; text-align: center;">
   <img 
-    src="./img/photo005.avif" 
+    src="./img/img05.avif" 
     alt="Café servido na cafeteria"
     style="width: 100%; max-width: 1280px; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; border: 1px solid #000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
   >
