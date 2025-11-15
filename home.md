@@ -131,10 +131,10 @@ Além do café, oferecemos uma curadoria de acompanhamentos, como bolos, croissa
 - Domingos e Feriados: 8h às 16h  
 
 **Contato:**  
-📞 (31) 3333-4444  
-📱 WhatsApp: (31) 99999-8888  
-📷 Instagram: [@graosearomas](https://instagram.com/graosearomas)  
-✉️ Email: contato@graosearomas.com.br
+- (31) 3333-4444  
+- WhatsApp: (31) 99999-8888  
+- Instagram: [@graosearomas](https://instagram.com/graosearomas)  
+- Email: contato@graosearomas.com.br
 
 <div style="max-width: 1280px; margin: 2rem auto; text-align: center;">
   <img 
