@@ -1,12 +1,9 @@
+// main.js - Arquivo principal que coordena tudo
+import { parseMarkdown, highlightCode } from './marked.js';
+import { sanitizeHTML } from './purify.js';
+
 const content = document.getElementById("content");
 const linksContainer = document.getElementById("pageLinks");
-
-marked.setOptions({
-     breaks: true,
-     gfm: true,
-     headerIds: true,
-     mangle: false
-});
 
 function removeEmojis(text) {
      return text.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|\uD83E[\uDD00-\uDDFF])/g, "");
@@ -39,15 +36,12 @@ async function loadMarkdown() {
           let md = await res.text();
           md = removeEmojis(md);
 
-          let html = marked.parse(md);
-          html = DOMPurify.sanitize(html);
+          let html = parseMarkdown(md);
+          html = sanitizeHTML(html);
 
           content.innerHTML = html;
 
-          content.querySelectorAll("pre code").forEach(el => {
-               hljs.highlightElement(el);
-          });
-
+          highlightCode(content);
           createNavLinksFromHTML();
 
           window.scrollTo({ top: 0, behavior: "smooth" });
