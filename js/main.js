@@ -1,5 +1,5 @@
 // main.js - Arquivo principal que coordena tudo
-import { parseMarkdown, highlightCode } from './marked.js';
+import { parseMarkdown } from './marked.js';
 import { sanitizeHTML } from './purify.js';
 
 const content = document.getElementById("content");
@@ -41,7 +41,6 @@ async function loadMarkdown() {
 
           content.innerHTML = html;
 
-          highlightCode(content);
           createNavLinksFromHTML();
 
           window.scrollTo({ top: 0, behavior: "smooth" });
