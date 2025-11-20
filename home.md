@@ -127,10 +127,10 @@ Além do café, oferecemos uma curadoria de acompanhamentos, como bolos, croissa
 **Endereço:** Rua das Flores, 234 - Centro, Belo Horizonte, MG  
 - Segunda a Sexta: 7h às 20h  
 - Sábados: 8h às 18h  
+- [Formulário para Contato](./forms.html)
 - (31) 3333-4444  
 - WhatsApp: (31) 99999-8888  
 - Instagram: [@graosearomas](https://instagram.com/graosearomas)  
-- [Formulário para Contato](./forms.html)
 
 <div style="max-width: 1280px; margin: 2rem auto; text-align: center;">
   <img 
