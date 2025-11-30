@@ -4,45 +4,83 @@
 <head>
      <meta charset="UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>@devcaffe</title>
-     <link rel="icon" href="./assets/favcoffee.svg" type="image/svg+xml">
 
-     <!-- Open Props -->
-     <link rel="stylesheet" href="https://unpkg.com/open-props" />
+     <!-- SEO -->
+     <meta name="description"
+          content="@coffeeshop - Cafeteria artesanal especializada em cafés especiais, bebidas quentes e doces caseiros. Ambiente acolhedor no coração da cidade." />
+     <meta name="keywords"
+          content="cafeteria, café especial, café artesanal, doces caseiros, bebidas quentes, coffee shop, cafeteria belo horizonte" />
+     <meta name="author" content="@coffeeshop" />
 
-     <!-- Tailwind CSS -->
-     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Open Graph (compartilhamento redes sociais) -->
+     <meta property="og:title" content="@coffeeshop - Cafeteria Artesanal" />
+     <meta property="og:description" content="Cafés especiais e doces caseiros em um ambiente acolhedor" />
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://coffeeshop.com" />
+     <meta property="og:image" content="https://coffeeshop.com/assets/img/og-image.jpg" />
 
-     <!-- Marked.js -->
-     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+     <!-- Twitter Card -->
+     <meta name="twitter:card" content="summary_large_image" />
+     <meta name="twitter:title" content="@coffeeshop - Cafeteria Artesanal" />
+     <meta name="twitter:description" content="Cafés especiais e doces caseiros em um ambiente acolhedor" />
 
-     <!-- DOMPurify -->
-     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
+     <title>@coffeeshop - Cafeteria Artesanal</title>
+     <link rel="icon" href="./assets/icons/coffee.svg" type="image/svg+xml" />
+
+     <!-- Preconnect (melhora performance) -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link rel="preconnect" href="https://unpkg.com" />
 
      <!-- Roboto Mono Font -->
      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 
-     <link rel="stylesheet" href="style.css">
+     <!-- AOS Animations -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
+     <!-- Alpine.js (defer para não bloquear renderização) -->
+     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+     <!-- CSS customizado -->
+     <link rel="stylesheet" href="./assets/css/base.css" />
+     <link rel="stylesheet" href="./assets/css/responsive.css" />
 </head>
 
-<body>
+<body x-data="{ showScrollTop: false }" @scroll.window="showScrollTop = (window.scrollY > 300)">
 
-     <nav>
-          <img src="./assets/favcoffee.svg" alt="Logo">
-          <div class="page-links" id="pageLinks"></div>
-     </nav>
+     <!-- ==================== -->
+     <!-- Header / Navbar -->
+     <!-- ==================== -->
+     <header>
+          <nav x-data="{ mobileMenuOpen: false }">
+               <img src="./assets/icons/coffee.svg" alt="Logo @coffeeshop" />
+               <div id="pageLinks" class="page-links"></div>
+          </nav>
+     </header>
 
+     <!-- ==================== -->
+     <!-- Main Content -->
+     <!-- ==================== -->
      <main id="content">
-          <h1>Carregando...</h1>
+          <div data-section="hero"></div>
+          <div data-section="menu"></div>
+          <div data-section="contact"></div>
      </main>
 
-     <footer>
-          <p style="text-transform: uppercase;">devgbr86.github.io/profile</p>
-     </footer>
+     <!-- ==================== -->
+     <!-- Footer -->
+     <!-- ==================== -->
+     <div data-section="footer"></div>
 
-     <!-- Scripts modulares -->
-     <script type="module" src="./js/main.js"></script>
+     <!-- ==================== -->
+     <!-- Scripts -->
+     <!-- ==================== -->
+     <!-- AOS Library -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+     <!-- App Scripts (ordem importa!) -->
+     <script src="./js/script.js"></script>
 
 </body>
 

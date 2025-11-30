@@ -1,0 +1,95 @@
+<section id="cardapio" data-aos="fade-up" data-aos-delay="200">
+     <img src="./assets/img/img02.avif" class="section-avatar" alt="Cardápio" loading="lazy">
+
+     <h1>CARDÁPIO</h1>
+
+     <div x-data="{ activeCategory: 1 }" class="accordion">
+
+          <!-- Categoria 1: Cafés Especiais -->
+          <div class="accordion-item">
+               <button @click="activeCategory = activeCategory === 1 ? null : 1" class="accordion-header">
+                    <span>
+                         <img src="./assets/icons/code.svg" class="icon" alt="">
+                         Cafés Especiais
+                    </span>
+                    <span x-text="activeCategory === 1 ? '−' : '+'"></span>
+               </button>
+               <div x-show="activeCategory === 1" x-collapse class="accordion-content">
+                    <p>
+                         Cafés preparados com grãos 100% arábica de fazendas certificadas,
+                         torrados artesanalmente para realçar os sabores únicos de cada região.
+                    </p>
+
+                    <p class="content-title">Opções:</p>
+                    <ul>
+                         <li><strong>Espresso Tradicional</strong> - R$ 8,00</li>
+                         <li><strong>Cappuccino Cremoso</strong> - R$ 12,00</li>
+                         <li><strong>Latte Macchiato</strong> - R$ 13,00</li>
+                         <li><strong>Café Coado V60</strong> - R$ 15,00</li>
+                         <li><strong>Cold Brew (Gelado)</strong> - R$ 14,00</li>
+                         <li><strong>Affogato (Café + Sorvete)</strong> - R$ 16,00</li>
+                    </ul>
+               </div>
+          </div>
+
+          <!-- Categoria 2: Bebidas Quentes Especiais -->
+          <div class="accordion-item">
+               <button @click="activeCategory = activeCategory === 2 ? null : 2" class="accordion-header">
+                    <span>
+                         <img src="./assets/icons/code.svg" class="icon" alt="">
+                         Bebidas Quentes Especiais
+                    </span>
+                    <span x-text="activeCategory === 2 ? '−' : '+'"></span>
+               </button>
+               <div x-show="activeCategory === 2" x-collapse class="accordion-content">
+                    <p>
+                         Bebidas quentes artesanais preparadas com leite premium e ingredientes selecionados,
+                         perfeitas para dias frios ou para quem busca algo diferente.
+                    </p>
+
+                    <p class="content-title">Opções:</p>
+                    <ul>
+                         <li><strong>Chocolate Quente Belga</strong> - R$ 14,00</li>
+                         <li><strong>Chai Latte Especial</strong> - R$ 13,00</li>
+                         <li><strong>Matcha Latte Orgânico</strong> - R$ 15,00</li>
+                         <li><strong>Golden Milk (Leite Dourado)</strong> - R$ 12,00</li>
+                         <li><strong>Mocaccino Premium</strong> - R$ 14,00</li>
+                    </ul>
+               </div>
+          </div>
+
+          <!-- Categoria 3: Doces Caseiros -->
+          <div class="accordion-item">
+               <button @click="activeCategory = activeCategory === 3 ? null : 3" class="accordion-header">
+                    <span>
+                         <img src="./assets/icons/code.svg" class="icon" alt="">
+                         Doces & Acompanhamentos
+                    </span>
+                    <span x-text="activeCategory === 3 ? '−' : '+'"></span>
+               </button>
+               <div x-show="activeCategory === 3" x-collapse class="accordion-content">
+                    <p>
+                         Doces e salgados produzidos diariamente em nossa confeitaria própria,
+                         usando receitas tradicionais e ingredientes frescos.
+                    </p>
+
+                    <p class="content-title">Opções:</p>
+                    <ul>
+                         <li><strong>Brownie de Chocolate Belga</strong> - R$ 10,00</li>
+                         <li><strong>Cheesecake de Frutas Vermelhas</strong> - R$ 12,00</li>
+                         <li><strong>Croissant de Chocolate</strong> - R$ 9,00</li>
+                         <li><strong>Pão de Queijo Mineiro</strong> - R$ 8,00</li>
+                         <li><strong>Torta de Limão</strong> - R$ 11,00</li>
+                         <li><strong>Cookie Americano</strong> - R$ 6,00</li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+
+     <div class="cta-container dual">
+          <a href="#contato" class="btn-primary">
+               <img src="./assets/icons/preview.svg" class="icon" alt="">
+               Fazer Pedido
+          </a>
+     </div>
+</section>
