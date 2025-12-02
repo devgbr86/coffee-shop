@@ -154,12 +154,12 @@ section::before {
 }
 
 /* --------------------------
-   IMAGENS DE SEÇÃO (RETANGULARES & GRANDES)
+   IMAGENS DE SEÇÃO (16:9 OTIMIZADAS)
 --------------------------- */
 .section-avatar {
      width: 100%;
-     max-width: 700px;
-     height: 320px;
+     max-width: 900px;
+     aspect-ratio: 16 / 9;
      margin: 0 auto 2.5rem;
      display: block;
      border-radius: var(--radius-lg);
